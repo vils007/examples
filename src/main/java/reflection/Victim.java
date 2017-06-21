@@ -6,6 +6,9 @@ package reflection;
 public class Victim {
     @Deprecated
     private String str;
+
+    @Deprecated
+    @VictimAnnotation
     private  Integer i;
 
     private void noToDo(){
