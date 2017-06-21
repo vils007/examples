@@ -5,13 +5,21 @@ package reflection;
  */
 public class Victim {
     @Deprecated
+    @VictimAnnotation
     private String str;
 
     @Deprecated
-    @VictimAnnotation
-    private  Integer i;
+    private Integer i;
 
-    private void noToDo(){
+    private void noToDo() {
         System.out.println("No to do");
+    }
+
+    public String getStr() {
+        return str;
+    }
+
+    public Integer getI() {
+        return i;
     }
 }

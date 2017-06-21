@@ -23,4 +23,5 @@ public class Ripper {
         Class clazz = object.getClass();
         return clazz.getMethods();
     }
+
 }
