@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9df9a2ad-22e8-4b74-8315-1f463f83fb60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/integro/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -725,7 +724,7 @@
       <workItem from="1497870540938" duration="10000" />
       <workItem from="1498050629557" duration="7101000" />
       <workItem from="1498117298885" duration="3061000" />
-      <workItem from="1498140097217" duration="5777000" />
+      <workItem from="1498140097217" duration="5856000" />
     </task>
     <task id="LOCAL-00001" summary="Add sone lines">
       <created>1497551098245</created>
@@ -790,11 +789,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498141409463</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Threads">
+      <created>1498210647765</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1498210647765</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18845000" />
+    <option name="totallyTimeSpent" value="18924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="-5" width="1376" height="738" extended-state="6" />
