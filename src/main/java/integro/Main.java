@@ -58,6 +58,7 @@ public class Main {
             ///System.out.println((String) rate.isEmpty());
 
         }
+if (true) {System.out.println("in 1");} else {System.out.println("in 2");}
 
         rate = null;
         // if (rate.trim().length() == 0 || rate.equals(null)) {
