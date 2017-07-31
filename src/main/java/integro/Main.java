@@ -6,9 +6,9 @@ package integro;
 public class Main {
 
     public static void main(String[] args) {
-        //  String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS[МЕСТРО РОЖДЕНИЯ]/G/8NNNNNNNNN9>D010117S1Т99O[ПП31111112/FAMILIYA=IMYA]";
-     //   String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS[МЕСТРО РОЖДЕНИЯ]/G/8NNNNNNNNN9>D010117S1Т99";
-        String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS/G/8NNNNNNNNN9>";
+        // String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS[МЕСТРО РОЖДЕНИЯ]/G/8NNNNNNNNN9>D010117S1Т99O[ПП31111112/FAMILIYA=IMYA]";
+        String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS[МЕСТРО РОЖДЕНИЯ]/G/8NNNNNNNNN9>D010117S0Т99";
+        // String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS/G/8NNNNNNNNN9>";
 
         String namber, typeDoc, namberPasport, name, sername,
                 fathername, datePasport, citizenship, placeOfBirth,
@@ -31,27 +31,35 @@ public class Main {
 
             System.out.println(string);
             citizenship = string.substring(1, 4);
-            if (string.substring(4, 6).contains("[")) {
-                placeOfBirth = string.substring(str.indexOf("[") + 1, string.indexOf("]/"));
+            if (string.substring(3, 6).contains("[")) {
+                placeOfBirth = string.substring(string.indexOf("[") + 1, string.indexOf("]/"));
             } else {
                 placeOfBirth = null;
             }
-            gender = string.substring(string.indexOf("/") + 5, string.indexOf("/") + 6);
-            phoneNamber = string.substring(string.indexOf("/") + 7, string.indexOf(">"));
-           // dateReg = str.substring(str.indexOf(">D") + 2, str.indexOf(">D") + 8);
-            if (string.contains("S0")){
-                statusAccount = "0";
-            }else {
-                statusAccount = "1";
-            }
+            String string2 = string.substring(4);
+            System.out.println(string2);
+            gender = string2.substring(string2.indexOf("/") + 1, string2.indexOf("/") + 2);
+            String string3 = string2.substring(string2.indexOf("/") + 1);
+            System.out.println(string3);
+            phoneNamber = string3.substring(string3.indexOf("/") + 1, string3.indexOf(">"));
+            // dateReg = str.substring(str.indexOf(">D") + 2, str.indexOf(">D") + 8);
+
+            if (string.contains("S0")) {
+                if (string3.contains("[")) {
+                    if (string3.substring(0, string.indexOf("[")).contains("S0")) {
+                        statusAccount = "0";
+                    } else statusAccount = "1";
+                } else statusAccount = "0";
+            } else statusAccount = "1";
+
             //statusAccount = string.substring(str.indexOf(">D") + 9, string.indexOf(">D") + 10);
             rate = "99";
 
-            if (string.contains("O[")) {
-                typeDoc2 = string.substring(str.indexOf("O[") + 2, str.indexOf("O[") + 4);
-                namberPasport2 = string.substring(str.indexOf("O[") + 4, str.lastIndexOf("/"));
-                sername2 = string.substring(str.lastIndexOf("/") + 1, string.lastIndexOf("="));
-                name2 = string.substring(str.lastIndexOf("=") + 1, string.lastIndexOf("]"));
+            if (string3.contains("O[")) {
+                typeDoc2 = string3.substring(string3.indexOf("O[") + 2, string3.indexOf("O[") + 4);
+                namberPasport2 = string3.substring(string3.indexOf("O[") + 4, string3.lastIndexOf("/"));
+                sername2 = string3.substring(string3.lastIndexOf("/") + 1, string3.lastIndexOf("="));
+                name2 = string3.substring(string3.lastIndexOf("=") + 1, string3.lastIndexOf("]"));
 
             }
 
@@ -61,7 +69,7 @@ public class Main {
             System.out.println(sername + " " + name + " " + fathername);
             System.out.println(datePasport);
             System.out.println(gender);
-            System.out.println(citizenship + " " + placeOfBirth + " " + gender + " " + phoneNamber + "  " + statusAccount);
+            System.out.println(citizenship + " " + placeOfBirth + " gender = " + gender + " phoneNamber= " + phoneNamber + " statusAccount =  " + statusAccount);
             System.out.println(rate);
 
             System.out.println("");
