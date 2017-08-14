@@ -7,8 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
         // String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS[МЕСТРО РОЖДЕНИЯ]/G/8NNNNNNNNN9>D010117S1Т99O[ПП31111112/FAMILIYA=IMYA]";
-        String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS[МЕСТРО РОЖДЕНИЯ]/G/8NNNNNNNNN9>D010117S0Т99";
-        // String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS/G/8NNNNNNNNN9>";
+      //  String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=ОТЧЕСТВО/ДДММГГГГ/RUS[МЕСТРО РОЖДЕНИЯ]/G/8NNNNNNNNN9>D010117S0Т99";
+        String str = "P04R103W9002301000041X<ПП0111111112/ФАМИЛИЯ=ИМЯ=/ДДММГГГГ/RUS/G/8NNNNNNNNN9>";
 
         String namber, typeDoc, namberPasport, name, sername,
                 fathername, datePasport, citizenship, placeOfBirth,
@@ -22,8 +22,14 @@ public class Main {
             typeDoc = str.substring(23, 25);
             namberPasport = str.substring(25, str.indexOf("/"));
             sername = str.substring(str.indexOf("/") + 1, str.indexOf("="));
+
             name = str.substring(str.indexOf("=") + 1, str.indexOf("=", str.indexOf("=") + 1));
             fathername = str.substring(str.indexOf("=", str.indexOf("=") + 1) + 1, str.indexOf("/", str.indexOf("/") + 1));
+
+            if (fathername.equals(null) || fathername.equals("")){
+                fathername = "-";
+            }
+
             datePasport = str.substring(str.indexOf("/", str.indexOf("/") + 1) + 1, str.indexOf("/", str.indexOf("/") + 1) + 9);
 
 
@@ -44,7 +50,7 @@ public class Main {
             phoneNamber = string3.substring(string3.indexOf("/") + 1, string3.indexOf(">"));
             // dateReg = str.substring(str.indexOf(">D") + 2, str.indexOf(">D") + 8);
 
-            if (string.contains("S0")) {
+            if (string3.contains("S0")) {
                 if (string3.contains("[")) {
                     if (string3.substring(0, string.indexOf("[")).contains("S0")) {
                         statusAccount = "0";

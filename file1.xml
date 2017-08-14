@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cepMessage>
+    <header>
+        <message>Fraud</message>
+        <dateSent>08/07/2017 19:00:58</dateSent>
+    </header>
+    <content>
+        <RqData RqUID="1-EB81G80-1080005301" RqTm="08/07/2017 19:00:58" SPName="MFM01RQ">
+        </RqData>
+        <SiebelMessage MessageType="Integration Object" IntObjectName="TSCMFM01RQ"
+                       IntObjectFormat="Siebel Hierarchical">
+            <ListOfEvents>
+                <Event>
+                    <EventName>Create New Member</EventName>
+                    <EventDateTime>08/07/2017 12:13:53</EventDateTime>
+                    <Version></Version>
+                    <SystemName></SystemName>
+                    <Login></Login>
+                    <Session></Session>
+                    <IPAddress></IPAddress>
+                    <CountryCode></CountryCode>
+                    <City_Rus></City_Rus>
+                    <UserAgent></UserAgent>
+                    <LOYMember>
+                        <LastName>TESTLK</LastName>
+                        <FirstName>TESTLK</FirstName>
+                        <MiddleName></MiddleName>
+                        <CyrLastName></CyrLastName>
+                        <CyrFirstName></CyrFirstName>
+                        <CyrMiddleName></CyrMiddleName>
+                        <BirthDate>12/12/2000</BirthDate>
+                        <NamePrefix>MR</NamePrefix>
+                        <Gender>M</Gender>
+                        <LKRegDate>08/07/2017</LKRegDate>
+                        <StartDate>08/07/2017</StartDate>
+                        <AccountBalance>500</AccountBalance>
+                        <QualMiles>0</QualMiles>
+                        <Segments>0</Segments>
+                        <TierLevel>0</TierLevel>
+                        <ListOfPhone>
+                            <Phone>
+                                <LocationTypeCode>MOB</LocationTypeCode>
+                                <CountryCd>Russia(+7)</CountryCd>
+                                <AreaCd></AreaCd>
+                                <PhoneNumber></PhoneNumber>
+                                <ExtensionNumber></ExtensionNumber>
+                                <FullPhoneNumber>79087653488</FullPhoneNumber>
+                            </Phone>
+                        </ListOfPhone>
+                        <SpecialMember>No</SpecialMember>
+                        <NoCheckPaid>false</NoCheckPaid>
+                        <NoTierChange>false</NoTierChange>
+                        <PointsNotExpire>false</PointsNotExpire>
+                        <TestMember>false</TestMember>
+                        <ListOfDocument>
+                            <Document>
+                                <DocTypeCode>OTHR</DocTypeCode>
+                                <EffectiveDate></EffectiveDate>
+                                <DocId>TTRR4534543254</DocId>
+                                <ExpireDate>08/22/2023</ExpireDate>
+                                <IssueCountryCode>U.S. Virgin Islands</IssueCountryCode>
+                                <Citizenship>U.S. Virgin Islands</Citizenship>
+                            </Document>
+                            <Document>
+                                <DocTypeCode>PSPT</DocTypeCode>
+                                <EffectiveDate></EffectiveDate>
+                                <DocId>48004877656756</DocId>
+                                <ExpireDate>12/31/4444</ExpireDate>
+                                <IssueCountryCode>Russia</IssueCountryCode>
+                                <Citizenship>Russia</Citizenship>
+                            </Document>
+                        </ListOfDocument>
+                        <Occupation></Occupation>
+                        <JobTitle></JobTitle>
+                        <ListOfEmail>
+                            <Email>
+                                <EmailAddr>rbliznyakov-lktest1@com.spb.ru</EmailAddr>
+                                <EmailTypeCode>HOM</EmailTypeCode>
+                                <ConfirmedEmail>true</ConfirmedEmail>
+                            </Email>
+                        </ListOfEmail>
+                        <OSI></OSI>
+                        <MemberStatus>Active</MemberStatus>
+                        <ListOfAddress></ListOfAddress>
+                        <PointsEffectiveDate></PointsEffectiveDate>
+                        <PointsExpireDate>01/01/2020</PointsExpireDate>
+                        <ListOfSmsInfoService>
+                            <SmsInfoService>
+                                <PhoneNumber>79087653488</PhoneNumber>
+                                <UpdatedDate></UpdatedDate>
+                                <ActiveFlg>true</ActiveFlg>
+                            </SmsInfoService>
+                        </ListOfSmsInfoService>
+                        <HashCodeWord></HashCodeWord>
+                    </LOYMember>
+                    <Platform></Platform>
+                    <Browser></Browser>
+                    <BrowserVersion></BrowserVersion>
+                    <Is_Mobile></Is_Mobile>
+                    <EventId>1-EB81G80</EventId>
+                    <Lang></Lang>
+                    <MemberNumber>1080005301</MemberNumber>
+                </Event>
+            </ListOfEvents>
+        </SiebelMessage>
+    </content>
+</cepMessage>

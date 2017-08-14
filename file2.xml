@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cepMessage>
+    <header>
+        <message>Fraud</message>
+        <dateSent>08/08/2017 13:46:22</dateSent>
+    </header>
+    <content>
+        <RqData RqUID="1-EB8V3XS-1080005452" RqTm="08/08/2017 13:46:22" SPName="MFM01RQ"></RqData>
+    <SiebelMessage MessageType="Integration Object" IntObjectName="TSCMFM01RQ" IntObjectFormat="Siebel Hierarchical">
+    <ListOfEvents>
+        <Event>
+            <EventName>Create New Member</EventName>
+            <EventDateTime>08/08/2017 13:22:25</EventDateTime>
+            <Version></Version>
+            <SystemName></SystemName>
+            <Login></Login>
+            <Session></Session>
+            <IPAddress></IPAddress>
+            <CountryCode></CountryCode>
+            <City_Rus></City_Rus>
+            <UserAgent></UserAgent>
+            <LOYMember>
+                <LastName>TEST</LastName>
+                <FirstName>TRISUHEDIH</FirstName>
+                <MiddleName></MiddleName>
+                <CyrLastName>Ð Ð£Ð¡Ð¡ÐšÐ˜Ð™</CyrLastName>
+                <CyrFirstName>Ð˜Ð’ÐÐ</CyrFirstName>
+                <CyrMiddleName></CyrMiddleName>
+                <BirthDate>01/01/1985</BirthDate>
+                <NamePrefix></NamePrefix>
+                <Gender>M</Gender>
+                <LKRegDate>08/08/2017</LKRegDate>
+                <StartDate>08/08/2017</StartDate>
+                <AccountBalance>500</AccountBalance>
+                <QualMiles>0</QualMiles>
+                <Segments>0</Segments>
+                <TierLevel>0</TierLevel>
+                <ListOfPhone>
+                    <Phone>
+                        <LocationTypeCode>MOB</LocationTypeCode>
+                        <CountryCd>Russia(+7)</CountryCd>
+                        <AreaCd></AreaCd>
+                        <PhoneNumber></PhoneNumber>
+                        <ExtensionNumber></ExtensionNumber>
+                        <FullPhoneNumber>79994569781</FullPhoneNumber>
+                    </Phone>
+                </ListOfPhone>
+                <SpecialMember>No</SpecialMember>
+                <NoCheckPaid>false</NoCheckPaid>
+                <NoTierChange>false</NoTierChange>
+                <PointsNotExpire>false</PointsNotExpire>
+                <TestMember>false</TestMember>
+                <ListOfDocument></ListOfDocument>
+                <Occupation></Occupation>
+                <JobTitle></JobTitle>
+                <ListOfEmail>
+                    <Email>
+                        <EmailAddr>emakarova-test2023@com.spb.ru</EmailAddr>
+                        <EmailTypeCode>HOM</EmailTypeCode>
+                        <ConfirmedEmail>false</ConfirmedEmail>
+                    </Email>
+                </ListOfEmail>
+                <OSI></OSI>
+                <MemberStatus>Active</MemberStatus>
+                <ListOfAddress></ListOfAddress>
+                <PointsEffectiveDate></PointsEffectiveDate>
+                <PointsExpireDate>01/01/2020</PointsExpireDate>
+                <ListOfSmsInfoService></ListOfSmsInfoService>
+                <HashCodeWord></HashCodeWord>
+            </LOYMember>
+            <Platform></Platform>
+            <Browser></Browser>
+            <BrowserVersion></BrowserVersion>
+            <Is_Mobile></Is_Mobile>
+            <EventId>1-EB8V3XS</EventId>
+            <Lang></Lang>
+            <MemberNumber>1080005452</MemberNumber>
+        </Event>
+    </ListOfEvents>
+</SiebelMessage>
+        </content>
+        </cepMessage>
